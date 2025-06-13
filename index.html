@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Instalar Script Tampermonkey</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0e0e10;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    a#install-btn {
+      padding: 20px 50px;
+      font-size: 24px;
+      background-color: #9147ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    a#install-btn:hover {
+      background-color: #772ce8;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="https://github.com/badashy23/xx9ma/raw/refs/heads/main/script.user.js" id="install-btn">
+    Instalar Script Tampermonkey
+  </a>
+
+  <script>
+    document.getElementById("install-btn").addEventListener("click", () => {
+      setTimeout(() => {
+        window.location.href = "https://twitch.tv";
+      }, 5000);
+    });
+  </script>
+
+</body>
+</html>
