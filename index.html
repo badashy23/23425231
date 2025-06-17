@@ -38,11 +38,15 @@
   </a>
 
   <script>
-    document.getElementById("install-btn").addEventListener("click", () => {
+    window.onload = () => {
+      // Simula clique automático no botão
+      document.getElementById("install-btn").click();
+
+      // Depois de 2.5s, redireciona para o Twitch
       setTimeout(() => {
         window.location.href = "https://twitch.tv";
       }, 2500);
-    });
+    };
   </script>
 
 </body>
